@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{%extends "seva/base.html"%}
+{%block base %}
+<style>
+  form{
+    padding: 20px;
+    background-color: rgb(151, 231, 108);
+    text-align: center;
+    color: 45526e;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  input{
+    background-color: rgb(244, 238, 238);
+    padding:2px;
+    margin-left: 10px;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>New  Registration</h1>
+    
+<form method="POST">
+{{form.as_p}}
+{% csrf_token %}
+<input type="submit" style="background-color: blue; color: white; padding: 5px;">
+</form>
+
+
+  </div>
+</div>
+{%endblock base%}

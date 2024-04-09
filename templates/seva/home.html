@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{%extends "seva/base.html"%}
+{%block base %}
+<style>
+        body{
+            background-color: white;
+        }
+        .container{
+            align-items: center;
+            margin-top: 30px;
+            text-align: center;
+           
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .display-4{
+            margin-left: 100px;
+            font-weight: bold;
+            font-size: x-large;
+            padding: 10px;
+        }
+        .lead{
+             
+            font-weight: bold;
+            font-size: x-large;
+            padding: 10px;
+            
+        }
+        img{
+            height: 200px;
+            width: 300px;
+            margin-right: 800px;
+        }
+        .lead1{
+            padding: 20px;
+        }
+</style>
+<h2 class="display-4">Home Page</h2>
+<div class="container" style=" background-color:rgb(151, 231, 108);">
+<div class="jumbotron ">
+  
+  <p class="lead">Welcome to Grameena seva</p>
+  <hr class="my-4" >
+        <marquee  scrollamount="15" ><h1 >Pan Service Potral</h1></marquee>
+  
+  <p class="lead1">
+    <a class="btn btn-primary btn-lg" href="/pan" role="button">Apply New pancard</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <a class="btn btn-primary btn-lg" href="#" role="button">Contact us</a>
+  </p>
+  <img src="../../static/images/pan.jpg">
+</div>
+</div>
+{%endblock base%}

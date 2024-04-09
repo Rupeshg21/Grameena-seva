@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{%extends "seva/base.html"%}
+{%block base %}
+<style>
+ .abc{
+    margin-top: 100px;
+    padding: 10px;
+    align-items: center;
+    margin-left: 70px;
+    margin-bottom: 200px;
+ }
+   a{
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    padding: 10px;
+   }
+</style>
+
+<button class="btn btn-success abc"><a href="/newr">pancard new Registration</a></button>
+<button class="btn btn-success abc"><a href="/list">list</a></button>
+<button class="btn btn-success abc"><a href="#">pending</a></button>
+<button class="btn btn-success abc"><a href="#">verification</a></button>
+<button class="btn btn-success abc"><a href="#">approved</a></button>
+<button class="btn btn-success abc"><a href="#">rejected</a></button>
+
+{%endblock base%}

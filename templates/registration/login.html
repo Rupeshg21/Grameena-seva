@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%extends "seva/base.html"%}
+{%block base %}
+<style>
+    form{
+        padding: 30px;
+        background-color: rgb(151, 231, 108);
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+    
+</style>
+<div class="container"  style="text-align: center;width: 300px; border-radius: 105px;">
+<form method="POST">
+    <h1>Login</h1>
+{{form.as_p}}
+{%csrf_token%}
+<button type="submit">login</button>
+</form></div>
+{%endblock base%}
